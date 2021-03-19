@@ -1,16 +1,16 @@
 {
     "properties": {
-      "displayName": "Require a tag on resources",
-      "mode": "Indexed",
-      "description": "Enforces existence of a tag. Does not apply to resource groups.",
-      "policyRule": {
-        "if": {
-          "value": "length(field('tags'))",
-          "equals": "0"
-        },
-        "then": {
-          "effect": "deny"
+        "displayName": "Require a tag on resources",
+        "mode": "Indexed",
+        "description": "Enforces existence of a tag. Does not apply to resource groups.",
+        "policyRule": {
+            "if": {
+                "value": "length(field('tags'))",
+                "equals": "0"
+            },
+            "then": {
+                "effect": "deny"
+            }
         }
-      }
     }
-  }
+}
